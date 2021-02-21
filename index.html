@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Testimonials Grid Section]</title>
+
+  
+  <style>
+
+body {background-color: hsl(210, 46%, 95%);
+font-size: 15px;
+  font-family: 'Barlow Semi Condensed', sans-serif;}
+
+.grid-container {
+                margin: 6rem;
+                display: grid;
+                background-color: hsl(210, 46%, 95%);
+                grid-column: 1fr 1fr 1fr 1fr;
+                grid-row: 1fr 1fr;
+                grid-column-gap: 30px;
+                grid-row-gap: 30px;
+                grid-template-areas: "daniel  daniel jonathan kira" "jeanette patrick patrick kira";
+                }
+             
+
+.patrick {
+          grid-area: patrick;
+          background-color:  hsl(219, 29%, 14%);  
+          color: white;
+          border-radius: 5px;
+          padding: 2rem;
+          line-height: 1.7;}
+
+.kira {grid-area: kira;
+      color:  hsl(217, 19%, 35%);
+      background-color: white;
+      border-radius: 5px;
+      padding: 2rem;
+      line-height: 1.7;}
+
+.daniel {
+        grid-area: daniel;
+        background-color: hsl(263, 55%, 52%);
+        color: white;
+        border-radius: 5px;
+        padding: 2rem;
+        line-height: 1.7;
+}
+
+
+
+.jonathan {grid-area: jonathan;
+          background-color:  hsl(217, 19%, 35%);
+          border-radius: 5px;
+          color:white;
+          padding: 2rem;
+          line-height: 1.7;
+      
+}
+
+
+.jeanette {grid-area: jeanette;
+          background-color: white; 
+          border-radius: 5px;
+          color: hsl(217, 19%, 35%);
+          padding: 2rem;
+          line-height: 1.7;}
+
+  
+
+img {width: 35px;
+  float: left;
+  border-radius: 100px;
+  margin-left: .6rem;
+
+ }
+
+
+p {color: hsl(0, 0%, 81%);}
+
+
+ .names {padding-left: 20px;
+        font-weight: 600;}
+
+ .verified {font-weight: 500;
+   padding-left: 20px;}
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+    @media only screen and (max-width: 900px) { 
+      
+      .grid-container {display: grid;
+                grid-column: 1fr;
+                grid-row: 5fr;
+                grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira"}
+
+  
+
+  </style>
+</head>
+<body>
+  <section class="grid-container">
+    <div class="daniel">
+<img src="./images/image-daniel.jpg" alt="">
+  <span class="names">Daniel Clifford </span><br>
+  <span class="verified">Verified Graduate</span>
+
+  <h3>I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+  in the company I joined. I honestly feel I got every penny’s worth.</h5>
+
+  <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+  transition and have heard some people who had an amazing experience here. I signed up 
+  for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+  The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+  the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+</div>
+<div class="jonathan">
+  <img src="./images/image-jonathan.jpg" alt="">
+  <span class="names"> Jonathan Walters<br></span>
+  <span class="verified">Verified Graduate</span>
+
+  <h3>The team was very supportive and kept me motivated</h3>
+
+  <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+  for a big company. This was one of the best investments I’ve made in myself. ”
+</div>
+<div class="jeanette">
+<img src="./images/image-jeanette.jpg" alt="">
+<span class="names"> Jeanette Harmon<br></span>
+  <span class="verified"> Verified Graduate</span>
+
+
+  <h3>An overall wonderful and rewarding experience</h3>
+
+  <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+  while doing something I love. ”</p>
+</div>
+<div class="patrick">
+  <img src="./images/image-patrick.jpg" alt="">
+  <span class="names">Patrick Abrams<br></span>
+  <span class="verified"> Verified Graduate</span>
+
+  <h3>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+  learning from their experiences was easy.</h3>
+
+  <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+  gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+  junior developer. The standard is above the rest. You will get the personal attention you need from 
+  an incredible community of smart and amazing people. ”</p>
+</div>
+<div class="kira">
+  <img src="./images/image-kira.jpg" alt="">
+  <span class="names"> Kira Whittle<br></span>
+  <span class="verified">Verified Graduate</span>
+
+  <h3>Such a life-changing experience. Highly recommended!</h3>
+
+  <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+  professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+  student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+  did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+  project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+  could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+  experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+  100% recommend! ”</p>
+</div>
+</section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Madison Hite</a>.
+  </div>
+</body>
+</html>
